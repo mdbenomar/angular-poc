@@ -1,0 +1,114 @@
+<header class="vab__header" ng-controller="mainCtrl">
+    <div class="vab__header__wrap">
+        <section class="vab__section--large-centered vab__gap--m-small">
+            <div class="vab__header__optional">
+                <!-- AUDIENCE NAV -->
+                <nav class="vab__audienceNav">
+                    <ul class="vab__audienceNav__list">
+                        <li class="vab__audienceNav__item" ng-repeat="audienceLink in audienceNav">
+                            <a href="{{audienceLink.url}}" class="vab__audienceNav__link __trigger_navigationClick">{{ audienceLink.title }}</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="vab__header__inner">
+                <div class="vab__header__logo">
+                    <a href="#" class="vab__logo">
+                        <span class="vab__screenReader">VAB Logo</span>
+                    </a>
+                </div>
+                <div class="vab__header__callout">
+                    <!-- CALL NAV -->
+                    <nav class="vab__callNav">
+                        <a href="tel:078-222-222" class="vab__callNav__link __trigger_navigationClick">
+                            <i class="vab__icon--telefoon"></i>
+                            Pech?
+                            <span class="vab__callNav__nr">Bel 078 222 222</span>
+                        </a>
+                    </nav>
+                </div>
+                <div class="vab__header__main__mobileControl">
+                    <a href="#0" class="vab__header__burgerMenu__link _trigger__mobileMenu" data-menu="mainMenu">
+                        <span class="vab__header__theBurger"></span>
+                        <span class="vab__screenReader">Menu</span>
+                    </a>
+                </div>
+                <div class="vab__header__main">
+                    <!-- MAIN NAV -->
+                    <nav class="vab__mainNav">
+                        <ul class="vab__mainNav__list">
+                            <li class="vab__mainNav__item "ng-repeat="mainLink in mainNav">
+                                <a href="{{mainLink.url}}" class="vab__mainNav__link _trigger__subs __trigger_navigationClick">
+                                    <span class="vab__mainNav__link__label">{{mainLink.title}}</span>
+                                    <i ng-if="mainLink.subnav" class="vab__mainNav__icon vab__icon--chevron-down"></i>
+                                </a>
+                                <div class="vab__mainNav__sub _has_aside" ng-repeat="subnav in mainLink.subnav">
+  {{
+    $scope.length
+
+
+}}
+                                    <div class="vab__mainNav__sub__main">
+                                        <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col1">
+                                            <li class="vab__mainNav__sub__main__item" ng-repeat="col1Link in subnav.col1">
+                                                <a href="{{col1Link.url}}" class="vab__mainNav__sub__main__link __trigger_navigationClick">{{col1Link.title}}</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col2">
+                                            <li class="vab__mainNav__sub__main__item" ng-repeat="col2Link in subnav.col2">
+                                                <a href="{{col2Link.url}}" class="vab__mainNav__sub__main__link __trigger_navigationClick">{{col2Link.title}}</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col3">
+                                            <li class="vab__mainNav__sub__main__item" ng-repeat="col3Link in subnav.col3">
+                                                <a href="{{col3Link.url}}" class="vab__mainNav__sub__main__link __trigger_navigationClick">{{col3Link.title}}</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col4">
+                                            <li class="vab__mainNav__sub__main__item" ng-repeat="col4Link in subnav.col4">
+                                                <a href="{{col4Link.url}}" class="vab__mainNav__sub__main__link __trigger_navigationClick">{{col4Link.title}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="vab__mainNav__sub__aside" ng-if="subnav.aside">
+                                        <ul class="vab__mainNav__sub__aside__list">
+                                            <li class="vab__mainNav__sub__aside__item" ng-repeat="asideLink in subnav.aside">
+                                                <a href="{{asideLink.url}}" class="vab__mainNav__sub__aside__link __trigger_navigationClick">{{asideLink.title}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="vab__header__search">
+                    <!-- SEARCH -->
+                    <div class="vab__search _target__burgerMenu">
+                        <a href="#0" class="vab__search__icon">
+                            <i class="vab__icon--search"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="vab__header__lower">
+                    <!-- SERVICE NAV -->
+                    <nav class="vab__serviceNav">
+                        <ul class="vab__serviceNav__list">
+                                        <li class="vab__serviceNav__item" ng-repeat="serviceLink in serviceNav">
+                                            <a href="{{serviceLink.url}}" class="vab__serviceNav__link __trigger_navigationClick">{{serviceLink.title}}</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- LANG NAV -->
+                                <nav class="vab__langNav">
+                                    <ul class="vab__langNav__list _trigger__langNav">
+                                        <li class="vab__langNav__item _target__langNav {{languageLink.state}}" ng-repeat="languageLink in languageNav">
+                                            <a href="{{languageLink.url}}" class="vab__langNav__link __trigger_navigationClick">{{languageLink.title}}</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+</header>

@@ -1,0 +1,225 @@
+[{
+    "audienceNav": [{
+        "title": "particulier",
+        "url": "www.particulier.be"
+    }, {
+        "title": "business",
+        "url": "www.particulier.be"
+    }, {
+        "title": "pers",
+        "url": "www.particulier.be"
+    }],
+    "serviceNav": [{
+        "title": "Bijstand voor bedrijven",
+        "url": "www.bijstand.be"
+    }, {
+        "title": "Mijn VAB",
+        "url": "www.mijnvab.be"
+    }, {
+        "title": "Webwinkel",
+        "url": "www.vabwebshop.be"
+    }, {
+        "title": "Contact",
+        "url": "www.vab.be/contact"
+    }],
+    "taalSwitch": [{
+        "title": "NL",
+        "url": "/nl/",
+        "state": "-active"
+    }, {
+        "title": "FR",
+        "url": "/fr/"
+    }, {
+        "title": "DE",
+        "url": "/de/"
+    }, {
+        "title": "EN",
+        "url": "/en/"
+    }],
+    "mainNav": [{
+        "title": "Pech- en reisbijstand",
+        "url": "www.bijstand.be",
+        "subnav": [{
+            "col1": [{
+                "title": "Pech in de Benelux",
+                "url": "www.example.com"
+            }, {
+                "title": "Pechbijstand",
+                "url": "www.example.com"
+            }, {
+                "title": "Motorbijstand",
+                "url": "www.example.com"
+            }, {
+                "title": "Fietsbijstand",
+                "url": "www.example.com"
+            }],
+            "col2": [{
+                "title": "Bijstand op reis",
+                "url": "www.example.com"
+            }, {
+                "title": "Reisbijstand",
+                "url": "www.example.com"
+            }, {
+                "title": "Tijdelijke reisbijstand",
+                "url": "www.example.com"
+            }, {
+                "title": "Annulatieverzekering",
+                "url": "www.example.com"
+            }],
+            "col3": [{
+                "title": "Combipakketten",
+                "url": "www.example.com"
+            }, {
+                "title": "Bijstandspakket",
+                "url": "www.example.com"
+            }, {
+                "title": "Vakantiepakket",
+                "url": "www.example.com"
+            }, {
+                "title": "Multipakket",
+                "url": "www.example.com"
+            }],
+            "aside": [{
+                "title": "Welke bijstand past bij jou",
+                "url": "www.example.com"
+            }, {
+                "title": "Verzekeringsattest",
+                "url": "www.example.com"
+            }, {
+                "title": "Aanvragen",
+                "url": "www.example.com"
+            }, {
+                "title": "Terugbetaling kosten",
+                "url": "www.example.com"
+            }, {
+                "title": "Verkooppunten",
+                "url": "www.example.com"
+            }]
+        }]
+    }, {
+        "title": "Rijschool",
+        "url": "www.rijschool.be"
+    }, {
+        "title": "Banden",
+        "url": "www.banden.be"
+    }, {
+        "title": "Auto",
+        "url": "www.auto.be",
+        "subnav": [{
+            "col1": [{
+                "title": "Tweedehandswagens",
+                "url": "www.example.com"
+            }],
+            "col2": [{
+                "title": "Diagnosecentrum",
+                "url": "www.example.com"
+            }],
+            "col3": [{
+                "title": "Tankkaart",
+                "url": "www.example.com"
+            }],
+            "col4": [{
+                "title": "Training en Consult",
+                "url": "www.example.com"
+            }],
+            "aside": [{
+                "title": "Autotoebehoren",
+                "url": "www.example.com"
+            }, {
+                "title": "Vignetten",
+                "url": "www.example.com"
+            }, {
+                "title": "Télépéage babdge",
+                "url": "www.example.com"
+            }, {
+                "title": "Alle producten",
+                "url": "www.example.com"
+            }]
+        }]
+    }, {
+        "title": "Info en diensten",
+        "url": "www.infoendiensten.be",
+        "subnav": [{
+            "col1": [{
+                "title": "Wegeninfo",
+                "url": "www.example.com"
+            }, {
+                "title": "Verkeersinfo België",
+                "url": "www.example.com"
+            }, {
+                "title": "Wegeninfo Europa",
+                "url": "www.example.com"
+            }, {
+                "title": "Brandstofprijzen",
+                "url": "www.example.com"
+            }, {
+                "title": "Toltarieven",
+                "url": "www.example.com"
+            }, {
+                "title": "Druktekalender",
+                "url": "www.example.com"
+            }],
+            "col2": [{
+                "title": "Nieuws en reportages",
+                "url": "www.example.com"
+            }, {
+                "title": "Mobiliteitsstudies",
+                "url": "www.example.com"
+            }, {
+                "title": "Artikels VAB-Magazine",
+                "url": "www.example.com"
+            }],
+            "col3": [{
+                "title": "Tools",
+                "url": "www.example.com"
+            }, {
+                "title": "Routeplanner",
+                "url": "www.example.com"
+            }, {
+                "title": "Fietsrouteplanner",
+                "url": "www.example.com"
+            }, {
+                "title": "Carpool App",
+                "url": "www.example.com"
+            }],
+            "col4": [{
+                "title": "Webwinkel",
+                "url": "www.example.com"
+            }, {
+                "title": "Vignetten",
+                "url": "www.example.com"
+            }, {
+                "title": "Télépéage",
+                "url": "www.example.com"
+            }, {
+                "title": "Alle producten",
+                "url": "www.example.com"
+            }]
+        }]
+    }, {
+        "title": "VAB-club",
+        "url": "www.vabclub.be",
+        "subnav": [{
+            "col1": [{
+                "title": "De VAB-Club",
+                "url": "www.example.com"
+            }],
+            "col2": [{
+                "title": "Ledenvoordelen",
+                "url": "www.example.com"
+            }],
+            "col3": [{
+                "title": "VAB-Magazine",
+                "url": "www.example.com"
+            }],
+            "col4": [{
+                "title": "Tankkaart",
+                "url": "www.example.com"
+            }],
+            "col5": [{
+                "title": "Wedstrijden",
+                "url": "www.example.com"
+            }]
+        }]
+    }]
+}]
