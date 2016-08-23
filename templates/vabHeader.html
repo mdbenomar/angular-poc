@@ -42,7 +42,7 @@
                                     <span class="vab__mainNav__link__label">{{mainLink.title}}</span>
                                     <i ng-if="mainLink.subnav" class="vab__mainNav__icon vab__icon--chevron-down"></i>
                                 </a>
-                                <div class="vab__mainNav__sub" ng-repeat="subnav in mainLink.subnav" ng-init="subnav.columns = 0; subnav.hasAside = 0" ng-class="subnav.hasAside == 1 ? (subnav.columns == 4 ? '_has_5_items _has_aside' : (subnav.columns == 3 ? '_has_4_items _has_aside' : '_has_aside')) : (subnav.columns == 4 ? '_has_4_items' : (subnav.columns == 5 ? '_has_5_items' : ''));">
+                                <div class="vab__mainNav__sub" ng-repeat="subnav in mainLink.subnav" ng-init="subnav.columns = 0; subnav.hasAside = 0" ng-class="getColumns(subnav)">
                                   <div class="vab__mainNav__sub__main">
                                         <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col1" ng-init="subnav.columns = 1">
                                             <li class="vab__mainNav__sub__main__item" ng-repeat="col1Link in subnav.col1">

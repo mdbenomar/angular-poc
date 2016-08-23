@@ -34,4 +34,24 @@ angular.module('vabNav')
         $scope.getLength = function(obj) {
             return Object.keys(obj).length;
         }
+
+        $scope.getColumns = function(object) {
+          if(object.hasAside == 1){
+            if(object.columns == 3){
+              return "_has_4_items _has_aside";
+            }else if(object.columns == 4){
+              return "_has_5_items _has_aside";
+            }else{
+              return "";
+            }
+          }else{
+            if(object.columns == 4){
+              return "_has_4_items";
+            }else if (object.columns == 5){
+              return "_has_5_items";
+            }else{
+              return "";
+            }
+          }
+        }
     })
