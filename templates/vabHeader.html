@@ -28,10 +28,10 @@
                     </nav>
                 </div>
                 <div class="vab__header__main__mobileControl">
-                    <a href="#0" class="vab__header__burgerMenu__link _trigger__mobileMenu" data-menu="mainMenu">
-                        <span class="vab__header__theBurger"></span>
-                        <span class="vab__screenReader">Menu</span>
-                    </a>
+                  <a href="" class="vab__header__burgerMenu__link _trigger__mobileMenu" data-menu="mainMenu">
+                    <span class="vab__header__theBurger"></span>
+                    <span class="vab__screenReader">Menu</span>
+                  </a>
                 </div>
                 <div class="vab__header__main">
                     <!-- MAIN NAV -->
@@ -42,35 +42,30 @@
                                     <span class="vab__mainNav__link__label">{{mainLink.title}}</span>
                                     <i ng-if="mainLink.subnav" class="vab__mainNav__icon vab__icon--chevron-down"></i>
                                 </a>
-                                <div class="vab__mainNav__sub _has_aside" ng-repeat="subnav in mainLink.subnav">
-  {{
-    $scope.length
-
-
-}}
-                                    <div class="vab__mainNav__sub__main">
-                                        <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col1">
+                                <div class="vab__mainNav__sub" ng-repeat="subnav in mainLink.subnav" ng-init="subnav.columns = 0; subnav.hasAside = 0" ng-class="subnav.hasAside == 1 ? (subnav.columns == 4 ? '_has_5_items _has_aside' : (subnav.columns == 3 ? '_has_4_items _has_aside' : '_has_aside')) : (subnav.columns == 4 ? '_has_4_items' : (subnav.columns == 5 ? '_has_5_items' : ''));">
+                                  <div class="vab__mainNav__sub__main">
+                                        <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col1" ng-init="subnav.columns = 1">
                                             <li class="vab__mainNav__sub__main__item" ng-repeat="col1Link in subnav.col1">
                                                 <a href="{{col1Link.url}}" class="vab__mainNav__sub__main__link __trigger_navigationClick">{{col1Link.title}}</a>
                                             </li>
                                         </ul>
-                                        <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col2">
+                                        <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col2" ng-init="subnav.columns = 2">
                                             <li class="vab__mainNav__sub__main__item" ng-repeat="col2Link in subnav.col2">
                                                 <a href="{{col2Link.url}}" class="vab__mainNav__sub__main__link __trigger_navigationClick">{{col2Link.title}}</a>
                                             </li>
                                         </ul>
-                                        <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col3">
+                                        <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col3" ng-init="subnav.columns = 3">
                                             <li class="vab__mainNav__sub__main__item" ng-repeat="col3Link in subnav.col3">
                                                 <a href="{{col3Link.url}}" class="vab__mainNav__sub__main__link __trigger_navigationClick">{{col3Link.title}}</a>
                                             </li>
                                         </ul>
-                                        <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col4">
+                                        <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col4" ng-init="subnav.columns = 4">
                                             <li class="vab__mainNav__sub__main__item" ng-repeat="col4Link in subnav.col4">
                                                 <a href="{{col4Link.url}}" class="vab__mainNav__sub__main__link __trigger_navigationClick">{{col4Link.title}}</a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="vab__mainNav__sub__aside" ng-if="subnav.aside">
+                                    <div class="vab__mainNav__sub__aside" ng-if="subnav.aside" ng-init="subnav.hasAside = 1">
                                         <ul class="vab__mainNav__sub__aside__list">
                                             <li class="vab__mainNav__sub__aside__item" ng-repeat="asideLink in subnav.aside">
                                                 <a href="{{asideLink.url}}" class="vab__mainNav__sub__aside__link __trigger_navigationClick">{{asideLink.title}}</a>
