@@ -35,23 +35,36 @@ angular.module('vabNav')
             return Object.keys(obj).length;
         }
 
+        /*$scope.getColumns = function(object) {
+            if (object.hasAside == 1) {
+                if (object.columns == 3) {
+                    return "_has_4_items _has_aside";
+                } else if (object.columns == 4) {
+                    return "_has_5_items _has_aside";
+                } else {
+                    return "";
+                }
+            } else {
+                if (object.columns == 4) {
+                    return "_has_4_items";
+                } else if (object.columns == 5) {
+                    return "_has_5_items";
+                } else {
+                    return "";
+                }
+            }
+        }*/
+
+
         $scope.getColumns = function(object) {
-          if(object.hasAside == 1){
-            if(object.columns == 3){
-              return "_has_4_items _has_aside";
-            }else if(object.columns == 4){
-              return "_has_5_items _has_aside";
-            }else{
-              return "";
+            var columnClassName = " ";
+            if (object.hasAside > 0) {
+                if (object.columns > 0) {
+                    columnClassName = "_has_" + (object.hasAside + object.columns) + "_items _has_aside";
+                }
+            } else {
+                columnClassName = "_has_" + object.columns + "_items";
             }
-          }else{
-            if(object.columns == 4){
-              return "_has_4_items";
-            }else if (object.columns == 5){
-              return "_has_5_items";
-            }else{
-              return "";
-            }
-          }
+            return columnClassName;
         }
     })
