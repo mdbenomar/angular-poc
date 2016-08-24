@@ -44,7 +44,8 @@
                                 </a>
                                 <div class="vab__mainNav__sub" ng-repeat="subnav in mainLink.subnav" ng-init="subnav.columns = 0; subnav.hasAside = 0" ng-class="getColumns(subnav)">
                                   <div class="vab__mainNav__sub__main">
-                                        <ul class="vab__mainNav__sub__main__list" ng-if="subnav.col1" ng-init="subnav.columns = 1">
+                                    {{ loopColumns(subnav) }}
+                                        <!--<ul class="vab__mainNav__sub__main__list" ng-if="subnav.col1" ng-init="subnav.columns = 1">
                                             <li class="vab__mainNav__sub__main__item" ng-repeat="col1Link in subnav.col1">
                                                 <a href="{{col1Link.url}}" class="vab__mainNav__sub__main__link __trigger_navigationClick">{{col1Link.title}}</a>
                                             </li>
@@ -63,7 +64,7 @@
                                             <li class="vab__mainNav__sub__main__item" ng-repeat="col4Link in subnav.col4">
                                                 <a href="{{col4Link.url}}" class="vab__mainNav__sub__main__link __trigger_navigationClick">{{col4Link.title}}</a>
                                             </li>
-                                        </ul>
+                                        </ul>-->
                                     </div>
                                     <div class="vab__mainNav__sub__aside" ng-if="subnav.aside" ng-init="subnav.hasAside = 1">
                                         <ul class="vab__mainNav__sub__aside__list">

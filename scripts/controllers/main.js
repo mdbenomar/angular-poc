@@ -1,5 +1,7 @@
 'use strict';
 
+// angular.module('vabNav', ['ngSanitize']) // Indien je HTML moet parsen
+
 angular.module('vabNav')
     .controller('mainCtrl', function($scope, dataService) {
         dataService.getLinks(function(response) {
@@ -35,27 +37,6 @@ angular.module('vabNav')
             return Object.keys(obj).length;
         }
 
-        /*$scope.getColumns = function(object) {
-            if (object.hasAside == 1) {
-                if (object.columns == 3) {
-                    return "_has_4_items _has_aside";
-                } else if (object.columns == 4) {
-                    return "_has_5_items _has_aside";
-                } else {
-                    return "";
-                }
-            } else {
-                if (object.columns == 4) {
-                    return "_has_4_items";
-                } else if (object.columns == 5) {
-                    return "_has_5_items";
-                } else {
-                    return "";
-                }
-            }
-        }*/
-
-
         $scope.getColumns = function(object) {
             var columnClassName = " ";
             if (object.hasAside > 0) {
@@ -67,4 +48,20 @@ angular.module('vabNav')
             }
             return columnClassName;
         }
+
+        /*
+
+        // Hier was ik nog aan bezig
+
+        $scope.loopColumns = function(object){
+          for(var i = 1; i <= 10; i++){
+            if(object.col + i){
+              return "<div id='col"+i+"'>Hallo</div>";
+            }else{
+              //break;
+              console.log("ni echt goed he");
+            }
+          }
+        }
+        */
     })
