@@ -9,6 +9,10 @@
         "title": "pers",
         "url": "www.particulier.be"
     }],
+    "callNav": [{
+        "telefoon": "078222222",
+        "title": "Pech? Bel "
+    }],
     "serviceNav": [{
         "title": "Bijstand voor bedrijven",
         "url": "www.bijstand.be"

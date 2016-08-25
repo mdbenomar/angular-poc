@@ -6,4 +6,9 @@ angular.module('vabNav')
     $http.get('data/nav.json')
     .then(callback)
   };
+
+  this.getFooterLinks = function(callback){
+    $http.get('data/footer.json')
+    .then(callback)
+  };
 });

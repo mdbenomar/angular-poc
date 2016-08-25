@@ -12,6 +12,7 @@ angular.module('vabNav')
             $scope.languageNav = [];
             $scope.serviceNav = [];
             $scope.mainNav = [];
+            $scope.callNav = [];
 
             angular.forEach(response.data, function(navlink, index) {
 
@@ -29,6 +30,10 @@ angular.module('vabNav')
 
                 angular.forEach(navlink.mainNav, function(mainNav, index) {
                     $scope.mainNav.push(mainNav);
+                });
+
+                angular.forEach(navlink.callNav, function(callNav, index){
+                    $scope.callNav.push(callNav);
                 });
             });
         });
@@ -64,4 +69,38 @@ angular.module('vabNav')
           }
         }
         */
+
+        dataService.getFooterLinks(function(response) {
+            //console.log(response.data);
+            $scope.footerlinks = response.data; // Alle links
+
+            $scope.footerGeneral = [];
+            $scope.footerGeneralwithSub = [];
+            $scope.footerMisc = [];
+            $scope.footerContact = [];
+            $scope.footerKlantendienst = [];
+
+            angular.forEach(response.data, function(footerlink, index) {
+
+                angular.forEach(footerlink.footerGeneral, function(footerGeneral, index) {
+                    $scope.footerGeneral.push(footerGeneral);
+                });
+
+                angular.forEach(footerlink.footerGeneralwithSub, function(footerGeneralwithSub, index) {
+                    $scope.footerGeneralwithSub.push(footerGeneralwithSub);
+                });
+
+                angular.forEach(footerlink.footerMisc, function(footerMisc, index) {
+                    $scope.footerMisc.push(footerMisc);
+                });
+
+                angular.forEach(footerlink.footerContact, function(footerContact, index){
+                    $scope.footerContact.push(footerContact);
+                });
+
+                angular.forEach(footerlink.footerKlantendienst, function(footerKlantendienst, index){
+                    $scope.footerKlantendienst.push(footerKlantendienst);
+                });
+            });
+        });
     })

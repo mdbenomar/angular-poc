@@ -17837,3 +17837,8 @@ body:before {
 .vab__ff--main {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
+
+a.vab__footerGeneral__link, a.vab__footerGeneral__link:empty{
+  display: block !important;
+  min-height: 15px !important;
+}
