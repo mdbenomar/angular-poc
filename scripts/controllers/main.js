@@ -1,8 +1,6 @@
 'use strict';
 
-// angular.module('vabNav', ['ngSanitize']) // Indien je HTML moet parsen
-
-angular.module('vabNav')
+angular.module('vabNav', ['ngSanitize', 'ngRoute', 'ngAnimate'])
     .controller('mainCtrl', function($scope, dataService) {
         dataService.getLinks(function(response) {
             //console.log(response.data);
